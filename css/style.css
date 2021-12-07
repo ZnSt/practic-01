@@ -1,0 +1,79 @@
+/* Шрифты */
+@font-face {
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../font/Gilroy-Regular.woff), url(../font/Gilroy-Regular.woff2);
+}
+
+@font-face {
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+
+  src: url(../font/Gilroy-Semibold.woff), url(../font/Gilroy-Semibold.woff2);
+}
+
+:root {
+  --main-bg-cl: #191919;
+  --primary-color-text: rgba(255, 255, 255, 0.8);
+  --title-color-text: #e7e7e7;
+  --second-color-text: rgba(255, 255, 255, 0.3);
+  --primary-btn-color-text: rgba(255, 255, 255, 0.9);
+  --primary-btn: #df3d3a;
+}
+
+body {
+  background-color: var(--main-bg-cl);
+  font-family: Gilroy;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.45;
+}
+/* Утилиты */
+ul {
+  list-style: none;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+}
+.title {
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+
+  color: var(--title-color-text);
+}
+
+.btn {
+  font-family: Gilroy, c sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--primary-btn-color-text);
+  background-color: var(--primary-btn);
+  border: none;
+}
+.btn-accent {
+  color: var(--primary-btn-color-text);
+  background-color: transparent;
+  border: 1px solid var(--primary-btn);
+}
